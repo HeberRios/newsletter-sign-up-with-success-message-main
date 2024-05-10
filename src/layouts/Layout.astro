@@ -19,12 +19,8 @@ const { title } = Astro.props;
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
     </head>
-    <body>
+    <body class="h-screen bg-[hsl(234,_29%,_20%)] font-roboto">
         <slot />
     </body>
 </html>
-<style is:global>
-    body {
-        font-family: "Roboto", sans-serif;
-    }
-</style>
+<style is:global></style>
