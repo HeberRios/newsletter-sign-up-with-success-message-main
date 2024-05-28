@@ -6,10 +6,12 @@ import FormContainer from "../components/FormContainer.astro";
 
 <Layout title="Welcome to Astro.">
     <main class="h-full grid content-center">
-        <div class="m-[0_auto] flex flex-col max-w-[80rem]">
-            <div class="sm:rounded-t-3xl bg-white overflow-hidden">
+        <div class="m-[0_auto] flex flex-col max-w-[80rem] md:flex-row-reverse">
+            <div
+                class="bg-white overflow-hidden max-sm:rounded-t-3xl md:rounded-r-3xl md:p-[2rem]"
+            >
                 <img
-                    class="w-full"
+                    class="w-full h-full object-cover rounded-3xl"
                     src="illustration-sign-up-mobile.svg"
                     alt=""
                 />
