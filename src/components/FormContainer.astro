@@ -26,9 +26,18 @@
         </li>
     </ul>
     <form action="" id="email-form" class="flex flex-col gap-[1rem]">
-        <label class="text-[1.125rem] font-bold lg:text-[1.25rem]" for="email"
-            >Email address</label
-        >
+        <div class="relative">
+            <label
+                class="text-[1.125rem] font-bold lg:text-[1.25rem] relative"
+                for="email"
+                >Email address
+            </label>
+            <span
+                id="emailErrorText"
+                class="absolute top-[50%] left-[100%] translate-x-[-100%] translate-y-[-50%] w-max opacity-0"
+                >*</span
+            >
+        </div>
         <input
             type="email"
             name="email"
@@ -39,9 +48,23 @@
     </form>
 
     <button
+        id="submitBtn"
         form="email-form"
         class="bg-bg_color py-[1.5rem] text-[1.35rem] text-white rounded-[.75rem] font-bold tracking-wide"
     >
         Subscribe to monthly newsletter
     </button>
 </div>
+
+<script>
+    const submitBtn = document.getElementById("submitBtn");
+    console.log(submitBtn);
+
+    const emailError = document.getElementById("emailErrorText");
+    console.log(emailError);
+
+    submitBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+
+    });
+</script>
