@@ -5,6 +5,21 @@
     box-sizing: border-box;
 }
 
+*:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.5rem #4a57ab;
+}
+
 html {
     font-size: 62.5%;
+}
+
+.invalid {
+    background-color: hsla(4, 100%, 67%, 0.16);
+    color: hsl(4, 100%, 67%);
+    border-color: hsl(4, 100%, 67%);
+}
+
+.invalid::placeholder {
+    color: hsla(4, 100%, 67%, 0.468);
 }
