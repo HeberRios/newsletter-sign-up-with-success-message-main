@@ -2,10 +2,11 @@
 import Layout from "../layouts/Layout.astro";
 import "../css/input.css";
 import FormContainer from "../components/FormContainer.astro";
+import Success from "../components/Success.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-    <main class="h-full grid content-center">
+    <main class="h-full grid grid-rows-[1fr] content-center md:grid-rows-none">
         <div class="m-[0_auto] flex flex-col max-w-[80rem] md:flex-row-reverse">
             <div
                 class="bg-white overflow-hidden max-sm:rounded-t-3xl md:rounded-r-3xl md:p-[2rem]"
@@ -17,6 +18,7 @@ import FormContainer from "../components/FormContainer.astro";
                 />
             </div>
             <FormContainer />
+            <Success />
         </div>
     </main>
 </Layout>
