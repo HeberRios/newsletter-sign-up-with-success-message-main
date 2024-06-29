@@ -23,3 +23,11 @@ html {
 .invalid::placeholder {
     color: hsla(4, 100%, 67%, 0.468);
 }
+
+.btn-cta {
+    transition: all 0.9s;
+}
+
+.btn-cta:hover {
+    background-color: #ff6257;
+}
